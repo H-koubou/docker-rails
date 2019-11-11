@@ -3,4 +3,8 @@ class BoardsController < ApplicationController
     @title = "Hello World"
     @description = "これはトップページになります。"
   end
+
+  def new
+    
+  end
 end

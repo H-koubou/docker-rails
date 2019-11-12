@@ -2,6 +2,7 @@ class BoardsController < ApplicationController
   def index
     @title = "Hello World"
     @description = "これはトップページになります。"
+    @boards = Board.all
   end
 
   def new
@@ -10,7 +11,6 @@ class BoardsController < ApplicationController
 
   def create
     Board.create(board_params)
-    binding.pry
   end
 
   private 

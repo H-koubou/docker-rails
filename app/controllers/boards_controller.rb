@@ -3,7 +3,7 @@ class BoardsController < ApplicationController
   def index
     @title = "Hello World"
     @description = "これはトップページになります。"
-    @boards = Board.all
+    @boards = Board.page(params[:page])
   end
 
   def new
